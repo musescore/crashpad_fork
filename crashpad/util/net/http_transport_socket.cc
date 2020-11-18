@@ -328,6 +328,7 @@ base::ScopedFD CreateSocket(const std::string& hostname,
 
 bool WriteRequest(Stream* stream,
                   const std::string& method,
+                  const std::string& hostname,
                   const std::string& resource,
                   const HTTPHeaders& headers,
                   HTTPBodyStream* body_stream) {
@@ -335,6 +336,11 @@ bool WriteRequest(Stream* stream,
       "%s %s HTTP/1.0\r\n", method.c_str(), resource.c_str());
   if (!stream->LoggingWrite(request_line.data(), request_line.size()))
     return false;
+
+  // Write Host header
+  request_line = base::StringPrintf("Host: %s\r\n", hostname.c_str());
+  if (!stream->LoggingWrite(request_line.data(), request_line.size()))
+    return false;  
 
   // Write headers, and determine if Content-Length has been specified.
   bool chunked = true;
@@ -575,7 +581,7 @@ bool HTTPTransportSocket::ExecuteSynchronously(std::string* response_body) {
 #endif  // CRASHPAD_USE_BORINGSSL
 
   if (!WriteRequest(
-          stream.get(), method(), resource, headers(), body_stream())) {
+          stream.get(), method(), hostname, resource, headers(), body_stream())) {
     return false;
   }
 
