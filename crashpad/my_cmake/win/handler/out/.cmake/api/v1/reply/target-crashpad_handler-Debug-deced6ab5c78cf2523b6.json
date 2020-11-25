@@ -1,0 +1,1127 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "crashpad_handler.exe"
+		},
+		{
+			"path" : "crashpad_handler.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"target_compile_definitions",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 162,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 179,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 171,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 164,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1"
+				},
+				{
+					"fragment" : "-std:c++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "NOMINMAX"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "OS_WIN"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "WIN32"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "WIN32_LEAN_AND_MEAN"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "C:/Development/crashpad_fork/crashpad/my_cmake/win/handler/out"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Development/crashpad_fork/crashpad/my_cmake/win/handler/../../.."
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Development/crashpad_fork/crashpad/my_cmake/win/handler/../../../third_party/mini_chromium/mini_chromium"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Development/crashpad_fork/crashpad/my_cmake/win/handler/../../../compat/win"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				3,
+				5,
+				12,
+				14,
+				16,
+				18,
+				20,
+				22,
+				24,
+				26,
+				28,
+				30,
+				32,
+				34,
+				36,
+				38,
+				40,
+				42,
+				44,
+				46,
+				48,
+				50,
+				52,
+				54,
+				56,
+				58,
+				60,
+				62,
+				64,
+				66,
+				68,
+				78,
+				80,
+				83,
+				86,
+				106,
+				109,
+				114,
+				116,
+				120,
+				123,
+				125,
+				128,
+				133,
+				135,
+				137,
+				138,
+				139,
+				141,
+				142
+			]
+		}
+	],
+	"id" : "crashpad_handler::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "advapi32.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "crashpad_handler",
+	"nameOnDisk" : "crashpad_handler.exe",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				3,
+				5,
+				12,
+				14,
+				16,
+				18,
+				20,
+				22,
+				24,
+				26,
+				28,
+				30,
+				32,
+				34,
+				36,
+				38,
+				40,
+				42,
+				44,
+				46,
+				48,
+				50,
+				52,
+				54,
+				56,
+				58,
+				60,
+				62,
+				64,
+				66,
+				68,
+				78,
+				80,
+				83,
+				86,
+				106,
+				109,
+				114,
+				116,
+				120,
+				123,
+				125,
+				128,
+				133,
+				135,
+				137,
+				138,
+				139,
+				141,
+				142
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				4,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				13,
+				15,
+				17,
+				19,
+				21,
+				23,
+				25,
+				27,
+				29,
+				31,
+				33,
+				35,
+				37,
+				39,
+				41,
+				43,
+				45,
+				47,
+				49,
+				51,
+				53,
+				55,
+				57,
+				59,
+				61,
+				63,
+				65,
+				67,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				79,
+				81,
+				82,
+				84,
+				85,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				107,
+				108,
+				110,
+				111,
+				112,
+				113,
+				115,
+				117,
+				118,
+				119,
+				121,
+				122,
+				124,
+				126,
+				127,
+				129,
+				130,
+				131,
+				132,
+				134,
+				136,
+				140
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/getopt/getopt.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/getopt/getopt.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/compat/win/getopt.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/compat/win/strings.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/compat/win/strings.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/compat/win/time.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/compat/win/time.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/compat/win/winbase.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/compat/win/winnt.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/compat/win/winternl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/compat/win/sys/time.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/compat/win/sys/types.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/handler/crash_report_upload_thread.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/handler/crash_report_upload_thread.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/handler/handler_main.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/handler/handler_main.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/handler/minidump_to_upload_parameters.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/handler/minidump_to_upload_parameters.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/handler/prune_crash_reports_thread.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/handler/prune_crash_reports_thread.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/handler/user_stream_data_source.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/handler/user_stream_data_source.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_annotation_writer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_annotation_writer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_byte_array_writer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_byte_array_writer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_context_writer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_context_writer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_crashpad_info_writer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_crashpad_info_writer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_exception_writer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_exception_writer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_file_writer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_file_writer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_handle_writer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_handle_writer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_memory_info_writer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_memory_info_writer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_memory_writer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_memory_writer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_misc_info_writer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_misc_info_writer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_module_crashpad_info_writer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_module_crashpad_info_writer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_module_writer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_module_writer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_rva_list_writer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_rva_list_writer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_simple_string_dictionary_writer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_simple_string_dictionary_writer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_stream_writer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_stream_writer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_string_writer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_string_writer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_system_info_writer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_system_info_writer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_thread_id_map.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_thread_id_map.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_thread_writer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_thread_writer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_unloaded_module_writer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_unloaded_module_writer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_user_extension_stream_data_source.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_user_extension_stream_data_source.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_user_stream_writer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_user_stream_writer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_writable.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_writable.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_writer_util.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/minidump/minidump_writer_util.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/atomicops.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/atomicops_internals_atomicword_compat.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/atomicops_internals_portable.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/auto_reset.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/bit_cast.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/check.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/check_op.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/compiler_specific.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/debug/alias.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/debug/alias.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/files/file_path.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/files/file_path.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/files/file_util.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/files/scoped_file.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/files/scoped_file.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/format_macros.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/logging.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/logging.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/macros.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/memory/free_deleter.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/memory/scoped_policy.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/metrics/histogram_functions.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/metrics/histogram_macros.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/metrics/persistent_histogram_allocator.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/notreached.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/numerics/checked_math.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/numerics/checked_math_impl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/numerics/clamped_math.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/numerics/clamped_math_impl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/numerics/safe_conversions.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/numerics/safe_conversions_arm_impl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/numerics/safe_conversions_impl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/numerics/safe_math.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/numerics/safe_math_arm_impl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/numerics/safe_math_clang_gcc_impl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/numerics/safe_math_shared_impl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/process/memory.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/process/memory.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/process/process_metrics.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/rand_util.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/rand_util.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/scoped_clear_last_error.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/scoped_generic.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/stl_util.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/strings/string16.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/strings/string16.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/strings/string_number_conversions.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/strings/string_number_conversions.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/strings/string_piece.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/strings/string_util.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/strings/stringprintf.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/strings/stringprintf.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/strings/sys_string_conversions.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/strings/utf_string_conversion_utils.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/strings/utf_string_conversion_utils.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/strings/utf_string_conversions.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/strings/utf_string_conversions.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/synchronization/condition_variable.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/synchronization/lock.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/synchronization/lock.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/synchronization/lock_impl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/sys_byteorder.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/template_util.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/third_party/icu/icu_utf.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/third_party/icu/icu_utf.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/threading/thread_local_storage.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/threading/thread_local_storage.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/process/process_metrics_win.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/scoped_clear_last_error_win.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/strings/string_util_win.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/strings/string_util_win.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/synchronization/lock_impl_win.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Development/crashpad_fork/crashpad/third_party/mini_chromium/mini_chromium/base/threading/thread_local_storage_win.cc",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

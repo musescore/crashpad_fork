@@ -1,0 +1,3 @@
+C:/Development/crashpad_fork/crashpad/my_cmake/win/handler/out/CMakeFiles/crashpad_handler.dir
+C:/Development/crashpad_fork/crashpad/my_cmake/win/handler/out/CMakeFiles/edit_cache.dir
+C:/Development/crashpad_fork/crashpad/my_cmake/win/handler/out/CMakeFiles/rebuild_cache.dir
